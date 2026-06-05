@@ -22,17 +22,6 @@ Personal portfolio website for Krishi Shah.
 - Scroll progress bar, piano key ripple effect, scroll-reveal animations
 - Fully responsive
 
-## Google Drive Setup
-
-Photos and videos are served dynamically from Google Drive. To configure:
-
-1. Create a Google Cloud project and enable the **Google Drive API**
-2. Create an API key restricted to your domain and the Drive API
-3. Copy `js/drive-config.js`, fill in your API key and Drive folder IDs
-4. Make each Drive folder public ("Anyone with the link, Viewer")
-
-The `js/drive-config.js` file is not tracked in git.
-
 ## Tech
 
 Pure HTML / CSS / JavaScript. No frameworks, no build step.
