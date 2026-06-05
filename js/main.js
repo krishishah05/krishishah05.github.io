@@ -163,22 +163,35 @@ async function fetchDriveItems(folderId) {
 }
 
 /* ── Singing grid ────────────────────── */
-async function buildSingingGrid() {
+async function buildSingingGrid(attempt = 0) {
   const grid = document.getElementById('singingGrid');
   if (!grid) return false;
   if (grid.querySelector('.media-item')) return true;
   const folderId = DRIVE_FOLDERS?.singing || '';
   let items = [];
   if (DRIVE_API_KEY && folderId) {
-    try { items = await fetchDriveItems(folderId); } catch(e) { console.error('Singing Drive fetch failed:', e); }
+    try { items = await fetchDriveItems(folderId); } catch(e) {
+      delete _driveCache[folderId];
+      if (attempt < 4) {
+        const delay = [2000, 4000, 8000, 15000][attempt];
+        setTimeout(() => buildSingingGrid(attempt + 1), delay);
+      }
+      return false;
+    }
   }
   if (!items.length) {
     const data = GALLERY_DATA.singing || {};
     (data.images || []).forEach(f => items.push({ type:'image', src:'assets/images/singing/'+f }));
     (data.videos || []).forEach(f => items.push({ type:'video', src:'assets/videos/singing/'+f }));
   }
+  if (!items.length) {
+    if (attempt < 4) {
+      const delay = [2000, 4000, 8000, 15000][attempt];
+      setTimeout(() => buildSingingGrid(attempt + 1), delay);
+    }
+    return false;
+  }
   const notice = document.getElementById('singingUploadNotice');
-  if (!items.length) return false;
   if (notice) notice.style.display = 'none';
   grid.innerHTML = '';
   currentMediaSet = items;
