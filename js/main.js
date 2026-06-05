@@ -242,8 +242,8 @@ function makeMediaItem(item, idx, set) {
   if (item.type === 'video') {
     div.innerHTML = `<video src="${item.src}" muted playsinline preload="metadata"></video><div class="video-play-icon"><i class="fas fa-play-circle"></i></div>`;
   } else if (item.type === 'drive-video') {
-    const bg = item.thumb ? `background-image:url('${item.thumb}');background-size:cover;background-position:center;` : 'background:var(--card2);';
-    div.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:100%;${bg}"><div style="background:rgba(0,0,0,0.45);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;"><i class="fas fa-play" style="font-size:1rem;color:#fff;margin-left:3px;"></i></div></div>`;
+    const bg = item.thumb ? `background-image:url('${item.thumb}');background-size:cover;background-position:center;` : 'background:linear-gradient(135deg,var(--card2),var(--bg3));';
+    div.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:8px;${bg}"><div style="background:rgba(0,0,0,0.5);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;"><i class="fas fa-play" style="font-size:1rem;color:#fff;margin-left:3px;"></i></div>${!item.thumb ? '<span style="font-size:0.65rem;color:var(--text3);opacity:0.7;">video</span>' : ''}</div>`;
   } else {
     div.innerHTML = `<img src="${item.src}" alt="" loading="lazy" />`;
   }
