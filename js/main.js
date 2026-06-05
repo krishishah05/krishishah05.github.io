@@ -135,11 +135,10 @@ document.querySelectorAll('.music-tab').forEach(tab => {
   tab.addEventListener('click', () => switchMusicTab(tab.dataset.tab));
 });
 
-// Restore last active music tab on page load
+// Restore last active music tab, or initialize the default active tab
 const savedMusicTab = localStorage.getItem('musicTab');
-if (savedMusicTab && document.querySelector(`.music-tab[data-tab="${savedMusicTab}"]`)) {
-  setTimeout(() => switchMusicTab(savedMusicTab), 0);
-}
+const defaultMusicTab = savedMusicTab || (document.querySelector('.music-tab.active')?.dataset.tab) || 'singing';
+setTimeout(() => switchMusicTab(defaultMusicTab), 0);
 
 /* ── Google Drive loader ─────────────── */
 const _driveCache = {};
