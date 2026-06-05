@@ -126,8 +126,7 @@ function switchMusicTab(target) {
   });
   localStorage.setItem('musicTab', target);
   if (target === 'singing' && !singingGridBuilt) {
-    singingGridBuilt = true;
-    buildSingingGrid();
+    buildSingingGrid().then(success => { if (success) singingGridBuilt = true; });
   }
   setTimeout(checkPianoVisibility, 0);
 }
@@ -182,7 +181,7 @@ async function buildSingingGrid() {
     (data.videos || []).forEach(f => items.push({ type:'video', src:'assets/videos/singing/'+f }));
   }
   const notice = document.getElementById('singingUploadNotice');
-  if (!items.length) return;
+  if (!items.length) return false;
   if (notice) notice.style.display = 'none';
   grid.innerHTML = '';
   currentMediaSet = items;
@@ -190,6 +189,7 @@ async function buildSingingGrid() {
     const div = makeMediaItem(item, idx, items);
     grid.appendChild(div);
   });
+  return true;
 }
 // buildSingingGrid() called lazily on first singing tab click via switchMusicTab
 
