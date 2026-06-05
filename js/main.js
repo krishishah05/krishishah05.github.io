@@ -116,7 +116,6 @@ function triggerCounters() {
 }
 
 /* ── Music tabs ──────────────────────── */
-let singingGridBuilt = false;
 function switchMusicTab(target) {
   document.querySelectorAll('.music-tab').forEach(t => t.classList.remove('active'));
   const tab = document.querySelector(`.music-tab[data-tab="${target}"]`);
@@ -125,9 +124,7 @@ function switchMusicTab(target) {
     p.style.display = p.id === 'music-' + target ? 'block' : 'none';
   });
   localStorage.setItem('musicTab', target);
-  if (target === 'singing' && !singingGridBuilt) {
-    buildSingingGrid().then(success => { if (success) singingGridBuilt = true; });
-  }
+  if (target === 'singing') buildSingingGrid();
   setTimeout(checkPianoVisibility, 0);
 }
 
@@ -168,7 +165,8 @@ async function fetchDriveItems(folderId) {
 /* ── Singing grid ────────────────────── */
 async function buildSingingGrid() {
   const grid = document.getElementById('singingGrid');
-  if (!grid) return;
+  if (!grid) return false;
+  if (grid.querySelector('.media-item')) return true;
   const folderId = DRIVE_FOLDERS?.singing || '';
   let items = [];
   if (DRIVE_API_KEY && folderId) {
