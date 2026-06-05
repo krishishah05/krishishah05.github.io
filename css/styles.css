@@ -153,6 +153,11 @@ ul{list-style:none;}
 .social-icon{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid var(--border2);color:var(--text2);font-size:0.95rem;transition:all var(--ease);}
 .social-icon:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px);box-shadow:0 8px 24px var(--gold-glow);}
 .home-nav-cards{display:flex;flex-direction:column;gap:10px;opacity:0;animation:fadeUp 0.8s 1.2s forwards;}
+.home-connect{margin-top:20px;opacity:0;animation:fadeUp 0.8s 1.5s forwards;}
+.home-connect-inner{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 20px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--card2);}
+.home-connect-label{font-size:0.88rem;font-weight:600;color:var(--gold);display:flex;align-items:center;gap:7px;white-space:nowrap;}
+.home-connect-sub{font-size:0.8rem;color:var(--text3);flex:1;min-width:120px;}
+.home-connect-inner .btn{padding:9px 20px;font-size:0.82rem;white-space:nowrap;}
 .nav-card{
   display:flex;align-items:center;gap:14px;
   padding:16px 22px;border-radius:12px;
@@ -210,17 +215,19 @@ ul{list-style:none;}
    PROFESSIONAL INNER TABS
 ═══════════════════════════════════════════ */
 .pro-inner-tabs{
-  display:flex;flex-wrap:wrap;justify-content:center;gap:6px;
-  margin-bottom:0;
+  display:flex;flex-wrap:nowrap;justify-content:center;gap:4px;
+  margin-bottom:0;overflow-x:auto;
+  scrollbar-width:none;-ms-overflow-style:none;
 }
+.pro-inner-tabs::-webkit-scrollbar{display:none;}
 .pro-tab{
-  display:inline-flex;align-items:center;gap:6px;
-  font-family:var(--sans);font-size:0.8rem;font-weight:500;
-  color:var(--text3);padding:8px 16px;border-radius:50px;
+  display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--sans);font-size:0.75rem;font-weight:500;
+  color:var(--text3);padding:7px 12px;border-radius:50px;
   border:1px solid var(--border);background:var(--card);
-  cursor:pointer;transition:all var(--ease);
+  cursor:pointer;transition:all var(--ease);white-space:nowrap;flex-shrink:0;
 }
-.pro-tab i{font-size:0.72rem;opacity:0.65;transition:opacity var(--ease);}
+.pro-tab i{font-size:0.68rem;opacity:0.65;transition:opacity var(--ease);}
 .pro-tab:hover{color:var(--text);border-color:var(--border2);}
 .pro-tab:hover i{opacity:1;}
 .pro-tab.active{
