@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Shah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <button class="nav-logo" data-page="home">KS</button>
+    <div class="nav-links" id="navLinks">
+      <button class="nav-btn active" data-page="home">Home</button>
+      <button class="nav-btn" data-page="professional">Professional</button>
+      <button class="nav-btn" data-page="music">Music</button>
+      <button class="nav-btn" data-page="travel">Travel</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Switch to light mode">
+      <i class="fas fa-sun toggle-icon toggle-sun"></i>
+      <span class="toggle-knob"></span>
+      <i class="fas fa-moon toggle-icon toggle-moon"></i>
+    </button>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══════════════════════ PAGE: HOME ════════════════════════ -->
+<div id="page-home" class="page active">
+  <div class="home-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="home-layout">
+    <!-- LEFT: text -->
+    <div class="home-left">
+      <p class="home-greeting">Hello, I'm</p>
+      <h1 class="home-name">Krishi Shah</h1>
+      <div class="home-role-wrap">
+        <span class="home-role-rotator" id="roleRotator">Software Engineer</span>
+      </div>
+      <p class="home-sub">SWE Intern @ Airbnb · CS Honors Scholar @ NJIT · Singer · Traveler · Leader</p>
+      <div class="home-socials">
+        <a href="https://www.linkedin.com/in/krishi-r-shah/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/krishishah05" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/krishiishah/" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@krishi.shah" target="_blank" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="mailto:krishi.shah2023@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="home-nav-cards">
+        <button class="nav-card gold-card" data-page="professional">
+          <i class="fas fa-briefcase"></i>
+          <span>Professional</span>
+          <i class="fas fa-arrow-right nav-card-arrow"></i>
+        </button>
+        <button class="nav-card rose-card" data-page="music">
+          <i class="fas fa-microphone"></i>
+          <span>Music</span>
+          <i class="fas fa-arrow-right nav-card-arrow"></i>
+        </button>
+        <button class="nav-card teal-card" data-page="travel">
+          <i class="fas fa-globe-americas"></i>
+          <span>Travel</span>
+          <i class="fas fa-arrow-right nav-card-arrow"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT: photos -->
+    <div class="home-right">
+      <div class="photo-collage">
+        <!-- Drop your photos into assets/images/profile/ and update these src paths -->
+        <div class="photo-slot slot-1">
+          <img src="assets/images/profile/photo1.jpg" alt="Krishi Shah" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="photo-placeholder"><i class="fas fa-camera"></i><span>photo1.jpg</span></div>
+        </div>
+        <div class="photo-slot slot-2">
+          <img src="assets/images/profile/photo2.jpg" alt="Krishi Shah" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="photo-placeholder"><i class="fas fa-camera"></i><span>photo2.jpg</span></div>
+        </div>
+        <div class="photo-slot slot-3">
+          <img src="assets/images/profile/photo3.jpg" alt="Krishi Shah" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="photo-placeholder"><i class="fas fa-camera"></i><span>photo3.jpg</span></div>
+        </div>
+        <div class="photo-slot slot-4">
+          <img src="assets/images/profile/photo4.jpg" alt="Krishi Shah" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="photo-placeholder"><i class="fas fa-camera"></i><span>photo4.jpg</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ PAGE: PROFESSIONAL ═════════════════════ -->
+<div id="page-professional" class="page">
+  <div class="pro-scene-bg">
+    <div class="pro-grid-lines"></div>
+    <div class="pro-diamond pd1"></div>
+    <div class="pro-diamond pd2"></div>
+    <div class="pro-diamond pd3"></div>
+    <div class="pro-diamond pd4"></div>
+    <div class="pro-orb po1"></div>
+    <div class="pro-orb po2"></div>
+    <div class="pro-orb po3"></div>
+  </div>
+  <div class="pro-page-inner">
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <span class="page-label gold-label">Professional</span>
+      <h2 class="page-title">Krishi Shah</h2>
+      <p class="page-subtitle copyable-email" title="Click to copy email">krishi.shah2023@gmail.com</p>
+      <div class="title-rule gold-rule"></div>
+      <!-- Pro Section Tabs -->
+      <div class="pro-inner-tabs">
+        <button class="pro-tab active" data-pro="about"><i class="fas fa-user"></i><span>About</span></button>
+        <button class="pro-tab" data-pro="experience"><i class="fas fa-briefcase"></i><span>Experience</span></button>
+        <button class="pro-tab" data-pro="education"><i class="fas fa-graduation-cap"></i><span>Education</span></button>
+        <button class="pro-tab" data-pro="projects"><i class="fas fa-code"></i><span>Projects</span></button>
+        <button class="pro-tab" data-pro="awards"><i class="fas fa-trophy"></i><span>Awards</span></button>
+        <button class="pro-tab" data-pro="skills"><i class="fas fa-tools"></i><span>Skills</span></button>
+        <button class="pro-tab" data-pro="volunteering"><i class="fas fa-heart"></i><span>Volunteering</span></button>
+        <button class="pro-tab" data-pro="organizations"><i class="fas fa-users"></i><span>Organizations</span></button>
+        <button class="pro-tab" data-pro="certifications"><i class="fas fa-certificate"></i><span>Certifications</span></button>
+        <button class="pro-tab" data-pro="meet"><i class="fas fa-calendar-check"></i><span>Meet Me</span></button>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <div id="pro-about" class="pro-panel active">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="about-lead">From watching my dad solder circuit boards to leading research, teaching, and building things that matter. Technology has always been my story.</p>
+          <p class="about-body">I remember the days my father used to call me down from my room whenever he was fixing the TV. I used to watch in disbelief as my dad simply cracked open the TV, straight down the middle, and melted a piece of metal between the wires. I soon learned this process was called "soldering." This captivation struck me; I had no clue how a simple piece of metal could change the way I viewed my daily TV shows.</p>
+          <p class="about-body">I further fed into this fascination through high school classes, diving into AP Computer Science Principles my freshman year. I loved playing probability card games with my parents, so I built my first statistics-based online application: <em>7 Up 7 Down!</em> And that's where it all started.</p>
+          <p class="about-body">Fast forward: I've built PriceAlert (real-time stock alerts), RoboRX (an autonomous medication-delivery robot), and a Google Search Query Recommendation System using BERT and Random Forest. I got a sense of thrill throughout every step of solution-creating, app-building, and shipping new software for better functionality.</p>
+          <p class="about-body">As an undergraduate student at NJIT's Albert Dorman Honors College, I am excited to see what my future has in store, making new memories, taking in immeasurable sums of knowledge, and navigating through any obstacles that come my way. <em>Each individual has their own journey, their own path, and their own dream. This one is mine.</em></p>
+          <div class="about-contact">
+            <a href="https://www.linkedin.com/in/krishi-r-shah/" target="_blank" class="contact-pill"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/krishishah05" target="_blank" class="contact-pill"><i class="fab fa-github"></i> GitHub</a>
+            <span class="contact-pill copyable-email" title="Click to copy email"><i class="fas fa-envelope"></i> krishi.shah2023@gmail.com</span>
+          </div>
+          <div class="featured-press">
+            <h4 class="featured-label">Featured In</h4>
+            <div class="press-links">
+              <a href="https://news.njit.edu/internships-fellowships-and-co-op-how-njit-honors-scholar-applies-her-stem-skills" target="_blank" class="press-item">
+                <i class="fas fa-newspaper"></i>
+                <div><span class="press-title">Internships, Fellowships and a Co-Op: How An NJIT Honors Scholar Applies Her STEM Skills</span><span class="press-outlet">NJIT News</span></div>
+              </a>
+              <a href="https://www.tapinto.net/towns/paramus/sections/education/articles/krishi-shah-of-paramus-named-2024-2025-governor-s-stem-scholar" target="_blank" class="press-item">
+                <i class="fas fa-newspaper"></i>
+                <div><span class="press-title">Krishi Shah of Paramus Named 2024-2025 Governor's STEM Scholar</span><span class="press-outlet">TAPinto</span></div>
+              </a>
+              <a href="https://www.govstemscholars.com/team/krishi-shah" target="_blank" class="press-item">
+                <i class="fas fa-newspaper"></i>
+                <div><span class="press-title">Krishi Shah | GovSTEMScholars: Team Lead Profile</span><span class="press-outlet">GovSTEMScholars</span></div>
+              </a>
+              <a href="https://paramuspost.com/article.php/20250326160046903" target="_blank" class="press-item">
+                <i class="fas fa-newspaper"></i>
+                <div><span class="press-title">New Jersey's Next STEM Frontier: Learning from the Land's First Scientists</span><span class="press-outlet">Paramus Post · <em>Written by Krishi Shah</em></span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── EXPERIENCE ── -->
+    <div id="pro-experience" class="pro-panel">
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Jun – Aug 2026</span><span class="tl-type">Internship</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(255,88,59,0.1);border-color:rgba(255,88,59,0.3);color:#ff583b;"><i class="fas fa-home"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Software Engineering Intern</h4>
+              <p class="tl-company">Airbnb · New York City, NY · On-site</p>
+              <p class="tl-desc">Summer 2026 Software Engineering Intern at Airbnb's NYC office.</p>
+              <div class="tl-tags"><span class="tag">Software Engineering</span><span class="tag">Full-Stack</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Feb – May 2026</span><span class="tl-type">Part-time</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-robot"></i></div>
+            <div class="tl-body">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+                <h4 class="tl-role">AI 110 &amp; Web 103 Tech Fellow Instructor</h4>
+                <a href="https://www.instagram.com/codepathorg/reel/DFa_uMgJs5o/" target="_blank" class="project-link-icon" title="Featured in CodePath Reel" style="flex-shrink:0;"><i class="fab fa-instagram"></i></a>
+              </div>
+              <p class="tl-company">CodePath · Remote</p>
+              <ul class="tl-bullets">
+                <li>Instructed students in AI fundamentals and advanced web development as a Tech Fellow for CodePath's AI 110 and Web 103 courses. Featured in CodePath's official Instagram reel.</li>
+                <li>Provided mentorship, guided project reviews, and facilitated hands-on learning sessions.</li>
+              </ul>
+              <div class="tl-cert-pills">
+                <span class="tl-cert-pill"><i class="fas fa-certificate"></i> Certificate of Leadership: Foundations of AI Engineering · Spring 2026</span>
+                <span class="tl-cert-pill"><i class="fas fa-certificate"></i> Certificate of Leadership: Advanced Web Development · Spring 2026</span>
+              </div>
+              <div class="tl-tags" style="margin-top:10px;"><span class="tag">AI</span><span class="tag">Teaching</span><span class="tag">Web Development</span><span class="tag">Mentorship</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Jun – Aug 2025</span><span class="tl-type">Internship</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(0,69,140,0.15);border-color:rgba(0,69,140,0.3);color:#4a9edd;"><i class="fas fa-chart-line"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Quantitative Research Intern</h4>
+              <p class="tl-company">JPMorganChase · New York City, NY · On-site</p>
+              <ul class="tl-bullets">
+                <li>Designed and implemented a 64-bit Philox pseudo-random number generator in C++ for Monte Carlo simulations, improving reproducibility and flexibility; conducted unit testing and benchmarking, achieving a <strong>35% computation speedup</strong> and strengthening reliability for large-scale models.</li>
+                <li>Optimized CPU/GPU parallel processing to reduce generation overhead by <strong>20%</strong> and enable multiple independent GPU streams, significantly improving throughput.</li>
+              </ul>
+              <div class="tl-tags"><span class="tag">CUDA</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">Monte Carlo</span><span class="tag">GPU Computing</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">May – Aug 2025</span><span class="tl-type">Fellowship</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(232,49,17,0.1);border-color:rgba(232,49,17,0.25);color:#e83111;"><i class="fas fa-store"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">eBay Pathways Program</h4>
+              <p class="tl-company">eBay · Seasonal</p>
+              <ul class="tl-bullets">
+                <li>Selected for eBay's competitive Pathways Fellowship program for high-achieving software engineering students.</li>
+                <li>Participated in technical training, networking sessions, and real-world software engineering projects. Received the eBay Pathways Outstanding Performance Award upon completion.</li>
+              </ul>
+              <div class="tl-tags"><span class="tag">Software Engineering</span><span class="tag">Networking</span><span class="tag">Technical Training</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Jan 2025 – Feb 2026</span><span class="tl-type">Part-time</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="tl-body">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+                <h4 class="tl-role">Web101 Tech Fellow Instructor</h4>
+                <a href="https://www.youtube.com/watch?v=0NE11sxYUTU" target="_blank" class="project-link-icon" title="Featured in CodePath Video" style="flex-shrink:0;"><i class="fab fa-youtube"></i></a>
+              </div>
+              <p class="tl-company">CodePath · Remote</p>
+              <ul class="tl-bullets">
+                <li>Instructed CodePath's Introduction to Web Development course as a Tech Fellow, guiding students through HTML, CSS, and JavaScript fundamentals. Featured in CodePath's official YouTube spotlight.</li>
+                <li>Mentored students 1:1, led code reviews, and fostered an inclusive learning environment for early-stage CS learners.</li>
+              </ul>
+              <div class="tl-cert-pills">
+                <span class="tl-cert-pill"><i class="fas fa-certificate"></i> Certificate of Leadership: Intro to Web Development · Spring 2025</span>
+              </div>
+              <div class="tl-tags" style="margin-top:10px;"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Mentorship</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Jul 2024 – Jan 2025</span><span class="tl-type">Co-Op · Full-time</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(235,0,27,0.1);border-color:rgba(235,0,27,0.25);color:#eb001b;"><i class="fas fa-heartbeat"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Data Analyst Co-Op</h4>
+              <p class="tl-company">Johnson & Johnson · Remote</p>
+              <ul class="tl-bullets">
+                <li>Improved supplier quality and performance by analyzing data, resolving issues, and leading the transition to new data systems, achieving a <strong>70% increase in report retrieval efficiency</strong>.</li>
+                <li>Spearheaded a major reorganization of quality control issues, training <strong>150+ employees</strong> on updated procedures which resolved 30+ software issues, boosting system efficiency by <strong>20%</strong>.</li>
+              </ul>
+              <div class="tl-tags"><span class="tag">Data Analytics</span><span class="tag">Supply Chain</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Alteryx</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Aug – Dec 2024</span><span class="tl-type">Apprenticeship</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(66,133,244,0.1);border-color:rgba(66,133,244,0.25);color:#4285f4;"><i class="fab fa-google"></i></div>
+            <div class="tl-body">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+                <h4 class="tl-role">Artificial Intelligence Studio Researcher</h4>
+                <a href="https://docs.google.com/presentation/d/18llJtEjg0dmeTy9sY6BA9e1Cxh2aLMm1BppVArO3Flw/edit?slide=id.g16a6a87d4ab_0_0#slide=id.g16a6a87d4ab_0_0" target="_blank" class="project-link-icon" title="View Final Presentation" style="flex-shrink:0;"><i class="fas fa-chalkboard"></i></a>
+              </div>
+              <p class="tl-company">Google · Remote</p>
+              <ul class="tl-bullets">
+                <li>Collaborated with Google employees through Break Through Tech program to improve a neural network system for recommending search queries, achieving <strong>78% accuracy</strong> in identifying well-formed and malformed queries.</li>
+                <li>Addressed issues in uneven query data by applying Random Forest Classifiers, which ensured consistent and accurate detection of incorrect queries, ultimately enhancing the quality of search recommendations.</li>
+              </ul>
+              <div class="tl-tags"><span class="tag">Machine Learning</span><span class="tag">BERT</span><span class="tag">Random Forest</span><span class="tag">Python</span><span class="tag">NLP</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Aug 2024 – May 2025</span><span class="tl-type">Program</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-users"></i></div>
+            <div class="tl-body">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+                <h4 class="tl-role">NJ Governor's STEM Scholar 2024-2025 &amp; Team Lead</h4>
+                <div class="project-links-top">
+                  <a href="https://www.tapinto.net/towns/paramus/sections/education/articles/krishi-shah-of-paramus-named-2024-2025-governor-s-stem-scholar" target="_blank" class="project-link-icon" title="TAPinto Article"><i class="fas fa-newspaper"></i></a>
+                  <a href="https://drive.google.com/file/d/1eIFLHxIQ2S1EIhFLA-Dx-ZMJaDIBqpqX/view" target="_blank" class="project-link-icon" title="RoboRX Fact Sheet"><i class="fas fa-file-alt"></i></a>
+                  <a href="https://docs.google.com/presentation/d/10FdG2FRDw0i8MTRmQTZtswvTtWKATTAaE4E0EQJqrYI/edit?slide=id.gd1bf8d60a4_0_0" target="_blank" class="project-link-icon" title="Commencement Ceremony Presentation"><i class="fas fa-chalkboard"></i></a>
+                  <a href="https://www.govstemscholars.com/team/krishi-shah" target="_blank" class="project-link-icon" title="GovSTEMScholars Profile"><i class="fas fa-user"></i></a>
+                </div>
+              </div>
+              <p class="tl-company">Governor's STEM Scholars · New Jersey</p>
+              <ul class="tl-bullets">
+                <li>Selected for NJ's competitive Governor's STEM Scholars program; served as Team Lead overseeing a 6-member team.</li>
+                <li>Led development of RoboRX, an autonomous robot designed to deliver medication supplies to underprivileged communities, using Raspberry Pi, Arduino, Jetson Nano, GPS, LiDAR, and cameras.</li>
+                <li>Directed companion app development (Node.js, Firebase, MySQL, REST APIs); project recognized at Governor's STEM Scholars Commencement Ceremony.</li>
+              </ul>
+              <div class="tl-research-photo">
+                <img src="assets/images/research/govstem-ceremony.jpg" alt="Governor's STEM Scholars Commencement Ceremony" onerror="this.parentElement.style.display='none'" />
+              </div>
+              <div class="tl-tags"><span class="tag">Robotics</span><span class="tag">Team Leadership</span><span class="tag">Raspberry Pi</span><span class="tag">Node.js</span><span class="tag">Firebase</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Jan – Sep 2024</span><span class="tl-type">Research · Part-time</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(90,179,196,0.1);border-color:rgba(90,179,196,0.25);color:var(--teal);"><i class="fas fa-microscope"></i></div>
+            <div class="tl-body">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+                <h4 class="tl-role">Audio / Music-Tech Researcher</h4>
+                <a href="assets/documents/uri-fellowship-2024.pdf" target="_blank" class="project-link-icon" title="View Research Proposal" style="flex-shrink:0;"><i class="fas fa-file-pdf"></i></a>
+              </div>
+              <p class="tl-company">NJIT SInC Lab · Newark, NJ · Hybrid</p>
+              <ul class="tl-bullets">
+                <li>Researched methods to improve computer systems' ability to understand and classify sound, filtering <strong>600+ technical articles</strong> and reducing irrelevant workload by 76% (ACM), 53.7% (IEEE), and 47.9% (Google Scholar).</li>
+                <li>Awarded the Provost URI Summer 2024 Fellowship and presented research findings to <strong>150+ researchers, advisors, and judges</strong> at NJIT's Summer Research Symposium.</li>
+              </ul>
+              <div class="tl-research-photo">
+                <img src="assets/images/research/symposium.jpg" alt="NJIT Summer Research Symposium Presentation" onerror="this.parentElement.style.display='none'" />
+              </div>
+              <div class="tl-tags"><span class="tag">Machine Learning</span><span class="tag">Audio Classification</span><span class="tag">Research</span><span class="tag">Zero-Shot Learning</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">Jun – Aug 2024</span><span class="tl-type">Apprenticeship</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-brain"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Break Through Tech AI Fellow @ Cornell Tech</h4>
+              <p class="tl-company">Break Through Tech · Cornell Tech · Remote</p>
+              <ul class="tl-bullets">
+                <li>Selected for Break Through Tech's highly competitive AI Fellowship at Cornell Tech, designed for high-achieving women in computing.</li>
+                <li>Completed intensive ML curriculum; earned Certificate of Completion and Cornell University Machine Learning Foundations certificate.</li>
+              </ul>
+              <div class="tl-cert-pills">
+                <span class="tl-cert-pill"><i class="fas fa-certificate"></i> Certificate of Completion: 2024-25 Break Through Tech AI Program · April 26, 2025</span>
+              </div>
+              <div class="tl-tags" style="margin-top:10px;"><span class="tag">Machine Learning</span><span class="tag">AI</span><span class="tag">Neural Networks</span><span class="tag">TensorFlow</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-meta"><span class="tl-date">May – Aug 2024</span><span class="tl-type">Internship</span></div>
+          <div class="tl-card">
+            <div class="tl-logo" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-mobile-alt"></i></div>
+            <div class="tl-body">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;">
+                <h4 class="tl-role">Software Engineering Intern</h4>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7233865685741846528/" target="_blank" class="project-link-icon" title="Credits to Krishi Shah - A Successful Intern" style="flex-shrink:0;"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <p class="tl-company">Hot Girl Safe · Remote</p>
+              <ul class="tl-bullets">
+                <li>Developed mobile application features using Flutter and Dart for a safety-focused consumer app.</li>
+                <li>Contributed across the full feature lifecycle: design, implementation, testing, and deployment.</li>
+              </ul>
+              <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile Development</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── EDUCATION ── -->
+    <div id="pro-education" class="pro-panel">
+      <div class="timeline edu-timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot edu-dot"></div>
+          <div class="tl-meta"><span class="tl-date" style="color:var(--teal)">Sep 2023 – May 2027</span><span class="tl-type">Bachelor's</span></div>
+          <div class="tl-card">
+            <div class="tl-logo edu-logo"><i class="fas fa-graduation-cap"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Bachelor of Science in Computer Science</h4>
+              <p class="tl-company">Albert Dorman Honors College at NJIT · Newark, NJ</p>
+              <p class="tl-gpa">Minors: Innovation & Entrepreneurship · UX/UI Design</p>
+              <div class="edu-detail-grid">
+                <div class="edu-detail">
+                  <span class="edu-detail-label">Activities & Societies</span>
+                  <p>Women in Computing Society (WiCS), Community Outreach Chair · GigaBeats A Cappella, Treasurer · Delta Phi Epsilon, Academic Coordinator</p>
+                </div>
+                <div class="edu-detail">
+                  <span class="edu-detail-label">Study Abroad</span>
+                  <p>University of New York in Prague, Fall 2026 (May–Dec 2026)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot edu-dot"></div>
+          <div class="tl-meta"><span class="tl-date" style="color:var(--teal)">Sep 2019 – Jun 2023</span><span class="tl-type">High School</span></div>
+          <div class="tl-card">
+            <div class="tl-logo edu-logo"><i class="fas fa-school"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">High School Diploma</h4>
+              <p class="tl-company">Paramus High School · Paramus, NJ</p>
+              <p class="tl-gpa">GPA: 4.9967 · SAT Math: 800 · Total Credits: 165.00</p>
+              <div class="edu-detail-grid">
+                <div class="edu-detail">
+                  <span class="edu-detail-label">Activities & Societies</span>
+                  <p>NAFME All-National Chorus (Chamber Honors, Region 1 NJSMA, MEBCI County Chorus) · Forensic Debate Club (President) · UNICEF (VP) · SCF K4K (Volunteer Coordinator) · SPARTONES (Elected Business Manager) · YTAG (incorruptible.us) · Young Scholar 2022 · RYLA Attendee · INTERACT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── PROJECTS ── -->
+    <div id="pro-projects" class="pro-panel">
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links-top">
+              <a href="https://www.tapinto.net/towns/paramus/sections/education/articles/krishi-shah-of-paramus-named-2024-2025-governor-s-stem-scholar" target="_blank" class="project-link-icon" title="TAPinto Article"><i class="fas fa-newspaper"></i></a>
+              <a href="https://drive.google.com/file/d/1eIFLHxIQ2S1EIhFLA-Dx-ZMJaDIBqpqX/view" target="_blank" class="project-link-icon" title="RoboRX Fact Sheet"><i class="fas fa-file-alt"></i></a>
+              <a href="https://docs.google.com/presentation/d/10FdG2FRDw0i8MTRmQTZtswvTtWKATTAaE4E0EQJqrYI/edit?slide=id.gd1bf8d60a4_0_0" target="_blank" class="project-link-icon" title="Commencement Presentation"><i class="fas fa-chalkboard"></i></a>
+              <a href="https://www.govstemscholars.com/team/krishi-shah" target="_blank" class="project-link-icon" title="GovSTEMScholars Profile"><i class="fas fa-user"></i></a>
+            </div>
+          </div>
+          <h4 class="project-name">RoboRX: Autonomous Medical Delivery Robot</h4>
+          <p class="project-dates">Sep 2024 – May 2025 · NJ Governor's STEM Scholars</p>
+          <p class="project-desc">Selected to lead a 6-member team developing RoboRX, an autonomous robot delivering medication to underserved communities. Built hardware using Raspberry Pi, Arduino, Jetson Nano, GPS, LiDAR, and cameras, and led development of a Node.js/Firebase/MySQL companion app with REST APIs.</p>
+          <div class="project-tags"><span class="tag">Raspberry Pi</span><span class="tag">Arduino</span><span class="tag">Jetson Nano</span><span class="tag">Node.js</span><span class="tag">Firebase</span><span class="tag">MySQL</span><span class="tag">LiDAR</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-links-top">
+              <a href="https://github.com/krishishah05/VIR-WiDS-Team-Cerebellum" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4 class="project-name">ADHD Diagnosis from Brain Activity (WiDS Datathon)</h4>
+          <p class="project-dates">Jan – Apr 2025 · Break Through Tech</p>
+          <p class="project-desc">Built predictive ML models using neuroimaging data to determine ADHD diagnosis and sex based on patterns in brain activity. Part of WiDS Datathon 2025 in collaboration with Break Through Tech AI Program, aiming to improve diagnostic accuracy and enable more personalized treatment approaches.</p>
+          <div class="project-tags"><span class="tag">Machine Learning</span><span class="tag">Neuroimaging</span><span class="tag">Python</span><span class="tag">Model Training</span><span class="tag">Data Science</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fab fa-google"></i></div>
+            <div class="project-links-top">
+              <a href="https://github.com/krishishah05/GoogleSearchQueryRecommendationSystem" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4 class="project-name">Google Search Query Recommendation System</h4>
+          <p class="project-dates">Sep – Dec 2024 · Google AI Studio</p>
+          <p class="project-desc">Developed and optimized a machine learning pipeline to validate well-formed and malformed search queries using BERT embeddings and a Random Forest Classifier. Addressed class imbalances, implemented robust feature engineering, and achieved <strong>78% test accuracy</strong>.</p>
+          <div class="project-tags"><span class="tag">BERT</span><span class="tag">Random Forest</span><span class="tag">NLP</span><span class="tag">Python</span><span class="tag">TF-IDF</span><span class="tag">Transformers</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links-top">
+              <a href="https://github.com/krishishah05/StockPricePrediction" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4 class="project-name">Stock Price Prediction via LSTM Neural Networks</h4>
+          <p class="project-dates">Jul – Sep 2024 · NJIT Honors College</p>
+          <p class="project-desc">Leveraged Long Short-Term Memory (LSTM) neural networks to forecast stock prices using historical data from Yahoo Finance. Integrated the Relative Strength Index (RSI) and other technical indicators to improve prediction accuracy.</p>
+          <div class="project-tags"><span class="tag">LSTM</span><span class="tag">Neural Networks</span><span class="tag">Python</span><span class="tag">Yahoo Finance API</span><span class="tag">TensorFlow</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── AWARDS ── -->
+    <div id="pro-awards" class="pro-panel">
+      <div class="awards-grid">
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge"><i class="fas fa-trophy"></i></div>
+          <div class="award-body">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;">
+              <h4 class="award-name">1st Place: Honors Interdisciplinary Research Forum (Peer Recognition)</h4>
+              <div class="project-links-top" style="flex-shrink:0;">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7140713372265656320/" target="_blank" class="project-link-icon" title="LinkedIn Post"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://docs.google.com/document/d/1vIL2g5ozFlnOD1rdRxs4Q_awVDZLfkAjwsaTBEDHc1I/edit?usp=sharing" target="_blank" class="project-link-icon" title="Research Paper 1: Market Dynamics and Compiler Optimization"><i class="fas fa-file-alt"></i></a>
+                <a href="https://docs.google.com/document/d/1xw-o_S64Ew_RgZqbbc-CFaqr4uvZC0DLg1N-EZIq86A/edit?tab=t.0" target="_blank" class="project-link-icon" title="Research Paper 2: Biological Principals in Computer Architecture"><i class="fas fa-file-alt"></i></a>
+                <a href="https://drive.google.com/file/d/1luCQXBtrPPg6fVLO7yAR7ZlcIp7Hnqqx/view" target="_blank" class="project-link-icon" title="Award Document"><i class="fas fa-file-pdf"></i></a>
+              </div>
+            </div>
+            <p class="award-org">NJIT · Albert Dorman Honors College</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> December 6, 2023</p>
+            <p class="award-desc">Presented a research poster on compiler optimization among 23 judges, 100+ digital poster presentations, and 200+ scholars and faculty. Won First Place through peer recognition at NJIT's inaugural Honors Interdisciplinary Research Forum.</p>
+            <div class="award-media-row">
+              <div class="award-photo-slot">
+                <img src="assets/images/research/hirf-event.jpg" alt="HIRF Event" onerror="this.parentElement.style.display='none'" />
+              </div>
+              <div class="award-photo-slot">
+                <img src="assets/images/research/hirf-award.jpg" alt="Peer Recognition Award Ceremony" onerror="this.parentElement.style.display='none'" />
+              </div>
+            </div>
+            <div class="award-link-pills">
+              <span class="award-link-pill">Research Paper 1: Market Dynamics &amp; Compiler Optimization</span>
+              <span class="award-link-pill">Research Paper 2: Biological Principals in Computer Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge"><i class="fas fa-star"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">All-National Choral Award: NAFME Chamber Honors</h4>
+            <p class="award-org">NAFME · National Association for Music Education</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> High School</p>
+            <p class="award-desc">Selected for NAFME All-National Chorus at the Chamber Honors level, one of the highest distinctions in national music education. Also earned Region 1 NJSMA and MEBCI County Chorus honors.</p>
+            <div class="tl-link-icons" style="margin-top:10px;">
+              <a href="https://issuu.com/njmea/docs/2022_may_tempo/s/15598262" target="_blank" class="project-link-icon" title="NJMEA Article"><i class="fas fa-newspaper"></i></a>
+              <a href="https://nafme.org/wp-content/uploads/2022/03/2021-ANHE-Program-Book.pdf" target="_blank" class="project-link-icon" title="NAfME 2021 Program Book (Page 18)"><i class="fas fa-book-open"></i></a>
+              <a href="https://issuu.com/njmea/docs/2023maytempo" target="_blank" class="project-link-icon" title="2023 May TEMPO (Page 44)"><i class="fas fa-music"></i></a>
+              <a href="https://www.facebook.com/ParamusPublicSchools/posts/congratulations-to-the-3-paramus-high-school-students-who-were-accepted-into-the/1352097345308659/" target="_blank" class="project-link-icon" title="Paramus Public Schools Facebook Post"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge"><i class="fas fa-medal"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Presidential Gold Service Award</h4>
+            <p class="award-org">Presidential Volunteer Service Award</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> 250+ Service Hours</p>
+            <p class="award-desc">Awarded for completing 250+ volunteer service hours, earning the Presidential Gold level recognition for outstanding community service commitment.</p>
+            <div class="award-media-row">
+              <div class="award-photo-slot">
+                <img src="assets/images/research/presidential-service-award.jpg" alt="Presidential Service Award" onerror="this.parentElement.style.display='none'" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge"><i class="fas fa-award"></i></div>
+          <div class="award-body">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;">
+              <h4 class="award-name">NJ New Business Model Competition (NBMC) Finalist</h4>
+              <div class="project-links-top" style="flex-shrink:0;">
+                <a href="https://docs.google.com/presentation/d/1OGJ1qKb387GluuNshNdIwp90OR8SAwOK2BHY0XpU_bw/edit?slide=id.g29f6988df73_0_2258#slide=id.g29f6988df73_0_2258" target="_blank" class="project-link-icon" title="SuMFN Presentation (NBMC 2023)"><i class="fas fa-chalkboard"></i></a>
+              </div>
+            </div>
+            <p class="award-org">NJIT · Albert Dorman Honors College</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> November 2023</p>
+            <p class="award-desc">CEO of Sustainable Micro Farming Networks (SuMFN), Finalist among competitors from multiple schools. Only first-year student and one of two undergraduates to reach the finals. Received invitation to NJIT Summer Lean Startup Accelerator 2024.</p>
+            <div class="award-media-row">
+              <div class="award-photo-slot">
+                <img src="assets/images/research/nbmc-presentation.jpg" alt="NBMC Presentation" onerror="this.parentElement.style.display='none'" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-badge"><i class="fas fa-globe"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Gilman Scholarship Award</h4>
+            <p class="award-org">Benjamin A. Gilman International Scholarship Program</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> 2026</p>
+            <p class="award-desc">Received the prestigious Gilman Scholarship, awarded to outstanding U.S. undergraduate students to support study abroad experiences.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(232,49,17,0.1);border-color:rgba(232,49,17,0.25);color:#e83111;"><i class="fas fa-certificate"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">eBay Pathways Outstanding Performance Award</h4>
+            <p class="award-org">eBay</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> August 2025</p>
+            <p class="award-desc">Awarded for outstanding performance during the eBay Pathways SWE Fellowship program.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-users"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">NJ Governor's STEM Scholar 2024-2025</h4>
+            <p class="award-org">State of New Jersey (Governor's STEM Scholars)</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> 2024-2025</p>
+            <p class="award-desc">Selected as one of New Jersey's prestigious Governor's STEM Scholars, representing Bergen County. Served as Team Lead, mentoring peers and guiding original research recognized at the commencement ceremony.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(90,179,196,0.1);border-color:rgba(90,179,196,0.25);color:var(--teal);"><i class="fas fa-code"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Rewriting the Code Fellow</h4>
+            <p class="award-org">Rewriting the Code</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> 2024 – Present</p>
+            <p class="award-desc">Selected as a fellow of Rewriting the Code, an organization supporting women in computing through fellowships, community, and industry connections.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">CodePath AI Course Teaching Assistant</h4>
+            <p class="award-org">CodePath</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> 2026</p>
+            <p class="award-desc">Selected as a Teaching Assistant for CodePath's AI course, recognizing instructional excellence and technical leadership.</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-badge"><i class="fas fa-flask"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Provost URI Summer 2024 Fellowship</h4>
+            <p class="award-org">NJIT · Undergraduate Research &amp; Innovation Program</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Summer 2024</p>
+            <p class="award-desc">Awarded the NJIT Provost Undergraduate Research and Innovation Summer Fellowship for original research on zero-shot generalization analysis in audio classification.</p>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-graduation-cap"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Ken Tashian Memorial Scholarship</h4>
+            <p class="award-org">Paramus High School Alumni Association</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> June 2023</p>
+            <p class="award-desc">One of 5 recipients of the Ken Tashian Memorial Scholarship, awarded to a Paramus High School senior who embodies the Spartan spirit through activities that benefit the school and wider community. The first scholarship created by the PHSAA.</p>
+            <div class="tl-link-icons" style="margin-top:10px;">
+              <a href="https://www.tapinto.net/towns/paramus/sections/education/articles/paramus-high-school-alumni-association-awards-ken-tashian-memorial-scholarships-to-five-graduates" target="_blank" class="project-link-icon" title="TAPinto Article"><i class="fas fa-newspaper"></i></a>
+            </div>
+            <div class="award-media-row">
+              <div class="award-photo-slot">
+                <img src="assets/images/research/ken-tashian-scholarship.jpg" alt="Ken Tashian Scholarship" onerror="this.parentElement.style.display='none'" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge" style="background:rgba(90,179,196,0.1);border-color:rgba(90,179,196,0.25);color:var(--teal);"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Ruth Gray Laganella Memorial Scholarship</h4>
+            <p class="award-org">Paramus Rotary Club</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> June 2023</p>
+            <p class="award-desc">Selected recipient of the Paramus Rotary Club scholarship, awarded to outstanding graduating seniors in recognition of academic excellence and community service.</p>
+            <div class="tl-link-icons" style="margin-top:10px;">
+              <a href="https://www.facebook.com/ParamusRotaryClub/posts/this-past-month-the-rotary-club-of-paramus-awarded-30000-in-scholarships-among-e/602978091978154/" target="_blank" class="project-link-icon" title="Facebook Post"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="award-media-row">
+              <div class="award-photo-slot">
+                <img src="assets/images/research/ruth-gray-laganella-scholarship.jpg" alt="Ruth Gray Laganella Scholarship" onerror="this.parentElement.style.display='none'" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-star"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">AP Scholar with Distinction</h4>
+            <p class="award-org">College Board</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> July 2022</p>
+            <p class="award-desc">Awarded by College Board for achieving an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more exams, one of the highest AP Scholar distinctions.</p>
+            <div class="award-media-row">
+              <div class="award-photo-slot">
+                <img src="assets/images/research/ap-scholar-distinction.jpg" alt="AP Scholar with Distinction" onerror="this.parentElement.style.display='none'" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge" style="background:rgba(90,179,196,0.1);border-color:rgba(90,179,196,0.25);color:var(--teal);"><i class="fas fa-users"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Rotary Youth Leadership Awards (RYLA)</h4>
+            <p class="award-org">Rotary District 7490</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> June 2022</p>
+            <p class="award-desc">Selected for RYLA, a competitive leadership development program run by Rotary Clubs for high school rising seniors demonstrating dedication to service in the local community and beyond. An intensive leadership experience focused on developing skills while networking with peers and professionals.</p>
+            <div class="tl-link-icons" style="margin-top:10px;">
+              <a href="https://portal.clubrunner.ca/50049/districtorganizationchart/2021" target="_blank" class="project-link-icon" title="Rotary District 7490"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-lightbulb"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Young Scholar 2022</h4>
+            <p class="award-org">High School Navigator</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> April 2022</p>
+            <p class="award-desc">Accepted into the HS Navigator Young Scholars Program among 400+ students across 32 states and 190 schools. A selective program offering resources including lectures, research exposure, and networking events for high school students pursuing careers in technology, medicine, or business.</p>
+            <div class="tl-link-icons" style="margin-top:10px;">
+              <a href="https://hsnavigator.org/young-scholar-program-2022-2" target="_blank" class="project-link-icon" title="HS Navigator Young Scholar Program 2022"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card award-card-expanded">
+          <div class="award-badge" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-om"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Jain Academic Bowl (JAB) Finalist</h4>
+            <p class="award-org">JAINA (Jain Associations in North America)</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> 2017, 2019, 2021</p>
+            <p class="award-desc">Multiple 1st and 2nd place finishes nationally across three JAB competitions (2017, 2019, 2021). National Winner in the senior category at JAB 2021 (NJ Niyati, Caldwell). The Jain Academic Bowl is a prestigious national competition testing knowledge of Jain philosophy, history, and culture.</p>
+            <div class="tl-link-icons" style="margin-top:10px;">
+              <a href="https://issuu.com/jaindigest/docs/jain_digest_october_2021/s/13537659" target="_blank" class="project-link-icon" title="Jain Digest October 2021 (JAB)"><i class="fas fa-newspaper"></i></a>
+              <a href="https://jainaedu.blogspot.com/2017/07/" target="_blank" class="project-link-icon" title="Jaina Education"><i class="fas fa-book-open"></i></a>
+              <a href="https://www.jaina.org/page/07_11_17_Newsletter/JAINA-Executive-Committee-2017-2019-Convention-2017-Awards.htm" target="_blank" class="project-link-icon" title="2017-2019 JAB Newsletter"><i class="fas fa-trophy"></i></a>
+              <a href="https://www.jaina.org/page/AcademicBowl" target="_blank" class="project-link-icon" title="JAINA Academic Bowl"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── SKILLS ── -->
+    <div id="pro-skills" class="pro-panel">
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-header"><i class="fas fa-laptop-code"></i><h4>Languages</h4></div>
+          <div class="skill-tags">
+            <span class="skill-badge">Python</span><span class="skill-badge">Java</span><span class="skill-badge">JavaScript</span><span class="skill-badge">C++</span><span class="skill-badge">C</span><span class="skill-badge">C#</span><span class="skill-badge">CUDA</span><span class="skill-badge">Dart</span><span class="skill-badge">HTML/CSS</span><span class="skill-badge">SQL</span><span class="skill-badge">Bash</span><span class="skill-badge">PowerShell</span><span class="skill-badge">R</span><span class="skill-badge">Ruby</span><span class="skill-badge">Rust</span><span class="skill-badge">Swift</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-header"><i class="fas fa-brain"></i><h4>Frameworks &amp; Libraries</h4></div>
+          <div class="skill-tags">
+            <span class="skill-badge">TensorFlow</span><span class="skill-badge">BERT</span><span class="skill-badge">NumPy</span><span class="skill-badge">OpenCV</span><span class="skill-badge">React.js</span><span class="skill-badge">Django</span><span class="skill-badge">Node.js</span><span class="skill-badge">REST APIs</span><span class="skill-badge">TF-IDF</span><span class="skill-badge">Flutter</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-header"><i class="fas fa-tools"></i><h4>Tools &amp; Platforms</h4></div>
+          <div class="skill-tags">
+            <span class="skill-badge">Git</span><span class="skill-badge">AWS</span><span class="skill-badge">GCP</span><span class="skill-badge">Docker</span><span class="skill-badge">Kubernetes</span><span class="skill-badge">Firebase</span><span class="skill-badge">Linux</span><span class="skill-badge">JIRA</span><span class="skill-badge">Tableau</span><span class="skill-badge">Alteryx</span><span class="skill-badge">Adobe Tools</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-header"><i class="fas fa-microchip"></i><h4>Hardware</h4></div>
+          <div class="skill-tags">
+            <span class="skill-badge">Raspberry Pi</span><span class="skill-badge">Arduino</span><span class="skill-badge">Jetson Nano</span><span class="skill-badge">LiDAR</span><span class="skill-badge">GPS Modules</span><span class="skill-badge">Microcontrollers</span><span class="skill-badge">Sensors</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-header"><i class="fas fa-users"></i><h4>Leadership &amp; Soft Skills</h4></div>
+          <div class="skill-tags">
+            <span class="skill-badge">Team Leadership</span><span class="skill-badge">Project Management</span><span class="skill-badge">Teaching &amp; Mentorship</span><span class="skill-badge">Public Speaking</span><span class="skill-badge">Research</span><span class="skill-badge">Event Coordination</span><span class="skill-badge">Community Outreach</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-header"><i class="fas fa-globe"></i><h4>Languages (Spoken)</h4></div>
+          <div class="skill-tags">
+            <span class="skill-badge">English: Native</span><span class="skill-badge">Gujarati: Native</span><span class="skill-badge">Hindi: Proficient</span><span class="skill-badge">Spanish: Conversational</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── VOLUNTEERING ── -->
+    <div id="pro-volunteering" class="pro-panel">
+      <div class="timeline vol-timeline">
+        <div class="tl-item">
+          <div class="tl-dot vol-dot"></div>
+          <div class="tl-meta"><span class="tl-date" style="color:var(--rose)">Sep 2019 – Jun 2023</span><span class="tl-type">3 yrs 10 mos</span></div>
+          <div class="tl-card">
+            <div class="tl-logo vol-logo"><i class="fas fa-heart"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Volunteer Coordinator (Elected Committee Member)</h4>
+              <p class="tl-company">Share and Care Foundation · Education</p>
+              <p class="tl-desc">Dedicated to raising money for underprivileged children in India to gain access to education and learning materials. Served as an elected committee member for 4 years, organizing fundraising initiatives, coordinating volunteer efforts, and driving awareness for education equity in underserved communities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot vol-dot"></div>
+          <div class="tl-meta"><span class="tl-date" style="color:var(--rose)">Sep 2019 – Jun 2023</span><span class="tl-type">3 yrs 10 mos</span></div>
+          <div class="tl-card">
+            <div class="tl-logo vol-logo"><i class="fas fa-ban-smoking"></i></div>
+            <div class="tl-body">
+              <h4 class="tl-role">Student Representative</h4>
+              <p class="tl-company">Youth Tobacco Action Group (incorruptible.us) · Health</p>
+              <p class="tl-desc">Active member of Bergen County's state-wide Youth Tobacco Action Group (YTAG), a prevention and cessation program for youth ages 13-18. Attended bi-weekly meetings, developed multiple substance prevention techniques, created awareness ads about teen drug use, and delivered presentations to schools about youth tobacco use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ORGANIZATIONS ── -->
+    <div id="pro-organizations" class="pro-panel">
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-laptop"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Women in Computing Society (WiCS)</h4>
+            <p class="award-org">NJIT · Community Outreach Chair, prev. Event Coordinator</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Sep 2023 – Present</p>
+            <p class="award-desc">Voted E-board member by committee and interview. Help plan and coordinate major events and co-create NJIT GirlHacks hackathon. Previously served as Event Coordinator and WiCS Mentorship Program peer mentor.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(90,179,196,0.1);border-color:rgba(90,179,196,0.25);color:var(--teal);"><i class="fas fa-music"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">GIGABeats A Cappella</h4>
+            <p class="award-org">NJIT · Treasurer + Member (audition-based)</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Sep 2023 – Present</p>
+            <p class="award-desc">Nominated and voted Treasurer of NJIT's GigaBeats A Cappella group as a freshman. Accepted member after competitive audition process.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-crown"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Delta Phi Epsilon Sorority</h4>
+            <p class="award-org">NJIT · Academic Coordinator</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Mar 2024 – Present</p>
+            <p class="award-desc">Active Academic Coordinator of Delta Phi Epsilon, fostering sisterhood, academic excellence, and community engagement at NJIT.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(90,179,196,0.1);border-color:rgba(90,179,196,0.25);color:var(--teal);"><i class="fas fa-network-wired"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Rewriting the Code (RTC)</h4>
+            <p class="award-org">Member</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Feb 2024 – Present</p>
+            <p class="award-desc">Member of Rewriting the Code, a virtual community built by and for college students through early-career women in tech and computer science.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);color:var(--gold);"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">CodePath</h4>
+            <p class="award-org">Technical Interview Prep · Web Development · AI Engineering</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Sep 2023 – Present</p>
+            <p class="award-desc">Completed multiple CodePath courses including Intro to Web Development, Advanced Web Development, and Foundations of AI Engineering. Served as a Technical Fellow (TF), mentoring students through technical concepts and interview preparation.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge" style="background:rgba(212,133,154,0.1);border-color:rgba(212,133,154,0.25);color:var(--rose);"><i class="fas fa-rocket"></i></div>
+          <div class="award-body">
+            <h4 class="award-name">Reboot Scholars</h4>
+            <p class="award-org">Member</p>
+            <p class="award-date"><i class="fas fa-calendar-alt"></i> Sep 2023 – Present</p>
+            <p class="award-desc">Member of Reboot Scholars, a community supporting the next generation of technology leaders through networking, mentorship, and professional development opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <div id="pro-certifications" class="pro-panel">
+      <div class="certs-grid">
+        <div class="cert-card"><div class="cert-icon" style="color:#e83111;"><i class="fas fa-certificate"></i></div><div class="cert-body"><h4 class="cert-name">eBay Pathways Outstanding Performance</h4><p class="cert-org">eBay</p><p class="cert-date">Issued August 2025</p></div></div>
+        <div class="cert-card"><div class="cert-icon" style="color:var(--gold);"><i class="fas fa-certificate"></i></div><div class="cert-body"><h4 class="cert-name">Certificate of Successful Leadership</h4><p class="cert-org">CodePath</p><p class="cert-date">Issued May 2025</p><p class="cert-date" style="color:var(--text3)">Skills: Leadership, Web Development</p></div></div>
+        <div class="cert-card"><div class="cert-icon" style="color:var(--gold);"><i class="fas fa-certificate"></i></div><div class="cert-body"><h4 class="cert-name">Break Through Tech AI: Certificate of Completion</h4><p class="cert-org">Break Through Tech · Cornell Tech</p><p class="cert-date">Issued April 2025</p></div></div>
+        <div class="cert-card"><div class="cert-icon" style="color:#b31b1b;"><i class="fas fa-certificate"></i></div><div class="cert-body"><h4 class="cert-name">Machine Learning Foundations</h4><p class="cert-org">Cornell University</p><p class="cert-date">Issued July 2024</p><p class="cert-date" style="color:var(--text3)">Skills: Machine Learning, Linear Regression</p></div></div>
+        <div class="cert-card"><div class="cert-icon" style="color:var(--rose);"><i class="fas fa-certificate"></i></div><div class="cert-body"><h4 class="cert-name">CodePath × RTC Advanced Technical Interview Prep</h4><p class="cert-org">CodePath</p><p class="cert-date">Credential ID: 95408</p></div></div>
+        <div class="cert-card"><div class="cert-icon" style="color:#009fdb;"><i class="fas fa-certificate"></i></div><div class="cert-body"><h4 class="cert-name">AT&amp;T 2024 Technology Academy</h4><p class="cert-org">AT&amp;T</p><p class="cert-date">Issued 2024</p><p class="cert-date" style="color:var(--text3)">Skills: Cloud Computing, AWS, GCP, Docker, Kubernetes + more</p></div></div>
+      </div>
+    </div>
+
+    <!-- ── MEET ME ── -->
+    <div id="pro-meet" class="pro-panel">
+      <div class="meet-card">
+        <div class="meet-deco"><div class="meet-orb m-orb-1"></div><div class="meet-orb m-orb-2"></div></div>
+        <div class="meet-content">
+          <div class="meet-icon-wrap"><i class="fas fa-calendar-check"></i></div>
+          <h3 class="meet-title">Let's Connect</h3>
+          <p class="meet-sub">Interested in collaborating, discussing opportunities, or just want to chat? Book a 30-minute meeting directly on my calendar. I'd love to hear from you.</p>
+          <div class="meet-pills">
+            <span class="meet-pill"><i class="fas fa-clock"></i> 30 minutes</span>
+            <span class="meet-pill"><i class="fas fa-video"></i> Virtual</span>
+            <span class="meet-pill"><i class="fas fa-calendar"></i> Pick your slot</span>
+          </div>
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ07-uA1tSWWmltSRiU7WH4HlgIfRg5PmBPs5ihJkQzncTjzdBNgcAajrBJSKInDoJOX7QFuDy6r" target="_blank" class="btn btn-gold btn-lg">
+            <i class="fas fa-calendar-plus"></i>&nbsp; Book a Meeting
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /pro-page-inner -->
+</div><!-- /page-professional -->
+
+<!-- ══════════════════════ PAGE: MUSIC ═══════════════════════ -->
+<div id="page-music" class="page">
+  <div class="music-scene-bg"><span class="float-note fn1">♪</span><span class="float-note fn2">♫</span><span class="float-note fn3">♩</span><span class="float-note fn4">♬</span><span class="float-note fn5">♪</span><span class="float-note fn6">♫</span><div class="music-pulse-ring r1"></div><div class="music-pulse-ring r2"></div>
+    <div class="piano-strip ps1" style="width:160px;"></div>
+    <div class="piano-strip ps2" style="width:130px;"></div>
+    <div class="piano-strip ps3" style="width:180px;"></div>
+    <div class="piano-strip ps4" style="width:110px;"></div>
+  </div>
+
+  <div class="page-header">
+    <span class="page-label rose-label">Music</span>
+    <h2 class="page-title">My Musical World</h2>
+    <div class="title-rule rose-rule"></div>
+    <div class="music-tabs-bar">
+      <button class="music-tab active" data-tab="singing"><i class="fas fa-microphone"></i> Singing Portfolio</button>
+      <button class="music-tab" data-tab="concerts"><i class="fas fa-music"></i> Concerts</button>
+    </div>
+  </div>
+
+  <div class="music-page-inner">
+
+    <!-- SINGING -->
+    <div id="music-singing" class="music-panel active">
+      <div class="singing-hero-card">
+        <div class="singing-hero-glow"></div>
+        <div class="singing-hero-content">
+          <div class="singing-mic-icon"><i class="fas fa-microphone-alt"></i></div>
+          <div class="singing-hero-text">
+            <h3>Krishi's Vocals</h3>
+            <p class="singing-lead">Singing since age 5. Performing across genres, continents, and stages that most only dream about.</p>
+            <p>Music isn't just something I do. It's who I am. From learning Indian classical ragas as a child to earning national choral honors, from opening for Bollywood legends, every performance has been a chapter of my most personal story. I love music so deeply and have attended so many concerts. There is nothing like experiencing music live, feeling the energy of an entire crowd in one shared moment.</p>
+            <a href="https://www.instagram.com/krishisvocals/" target="_blank" class="btn btn-rose" style="margin-top:8px;"><i class="fab fa-instagram"></i>&nbsp; @krishisvocals</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights -->
+      <div class="singing-creds">
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🎼 NAFME All-Nationals 2021: Chamber Honors (All-National Chorus)</div>
+          <div class="singing-cred-desc">Selected for the NAFME (National Association for Music Education) All-National Chorus at the Chamber Honors level, the most selective division of the most prestigious national choral honor in the United States. Representing the highest tier of high school choral achievement, this recognition placed Krishi among the top singers in the entire country.</div>
+          <span class="singing-cred-badge">National Honor</span>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🎤 Opened for Bollywood Concerts (Laxmikant Pyarelal)</div>
+          <div class="singing-cred-desc">Selected to open for concerts headlined by the legendary Bollywood composer duo Laxmikant Pyarelal, one of the most iconic music partnerships in Indian cinema history, known for thousands of timeless film scores. Performing before a crowd gathered for such legends is an honor that speaks to the level of recognition received for vocal talent.</div>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🌟 Opportunity to Open for Sonu Nigam</div>
+          <div class="singing-cred-desc">Extended an invitation to open for Sonu Nigam, one of Bollywood's most celebrated and versatile singers, with a career spanning decades and a voice recognized across the globe. Being considered at this level reflects the caliber of Krishi's vocal performance and stage presence.</div>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🎵 NJMEA All-State Chorus 2021–22</div>
+          <div class="singing-cred-desc">Selected for the New Jersey Music Educators Association (NJMEA) All-State Chorus for two consecutive years (2021 and 2022), a competitive statewide audition process that places only the top voices in New Jersey together for a unified choral performance. A significant honor in the competitive NJ music landscape.</div>
+          <span class="singing-cred-badge">State Honor</span>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🎶 MEBCI 1st Alto II, 2021</div>
+          <div class="singing-cred-desc">Selected for the MEBCI (Music Educators of Bergen County Incorporated) County Chorus as 1st Alto II, a county-level honor choir recognizing the top vocalists across Bergen County, NJ. Earning the lead part within the Alto II section reflects exceptional control and depth in the lower vocal range.</div>
+          <span class="singing-cred-badge">County Honor</span>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🎤 NJSMA Region 1 Chorus 2021–22</div>
+          <div class="singing-cred-desc">Selected for the NJSMA (New Jersey School Music Association) Region 1 Chorus, a regional-level auditioned choir representing the top singers from NJSMA's Region 1 school districts. This honor bridges the path from county-level excellence to state recognition, and two consecutive selections reflect sustained vocal excellence.</div>
+          <span class="singing-cred-badge">Regional Honor</span>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🎼 NJIT GIGABeats A Cappella (Treasurer)</div>
+          <div class="singing-cred-desc">Auditioned for and was accepted into NJIT's GIGABeats A Cappella group, NJIT's premier collegiate a cappella ensemble. Nominated and elected as Treasurer by the group as a freshman, demonstrating leadership and trust from day one. A cappella requires exceptional listening, blending, and harmonic precision alongside solo performance capability.</div>
+          <span class="singing-cred-badge">College · NJIT</span>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🏆 YJA Talent Show: 3rd Place and Audience Favorite Award (2024)</div>
+          <div class="singing-cred-desc">Competed in the YJA (Young Jains of America) Talent Show in 2024, earning 3rd Place from the judges and the coveted Audience's Favorite Award, voted on by the entire audience, reflecting an undeniable connection to the crowd and stage command. Winning both a judged prize and the people's choice award in the same competition demonstrates both technical skill and magnetic performance energy.</div>
+        </div>
+
+        <div class="singing-cred-item">
+          <div class="singing-cred-title">🪗 Indian Classical Vocal Training: 10+ Years</div>
+          <div class="singing-cred-desc">Trained in Indian Classical vocals for over 10 years under guru Sunita Kapur, a rigorous and deeply technical musical tradition spanning Hindustani and Carnatic systems, involving the mastery of ragas (melodic frameworks), talas (rhythmic cycles), gamakas (ornamentations), and extensive ear training. A decade-plus of classical training under Sunita Kapur forms the foundational discipline behind versatility across genres including Bollywood, pop, Western classical, and contemporary music.</div>
+          <span class="singing-cred-badge">10+ Years Training</span>
+        </div>
+
+
+      </div>
+
+
+      <div class="singing-gallery-wrap">
+        <h3 class="subsection-heading">Recordings &amp; Performances</h3>
+        <p class="upload-notice" id="singingUploadNotice"><i class="fas fa-folder-open"></i> Drop your singing photos into <code>assets/images/singing/</code> and videos into <code>assets/videos/singing/</code>, then add filenames to <code>js/gallery-data.js</code> under <strong>singing</strong>.</p>
+        <div class="media-grid" id="singingGrid">
+          <div class="empty-gallery"><i class="fas fa-microphone"></i><p>Your videos &amp; photos will appear here</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCERTS -->
+    <div id="music-concerts" class="music-panel" style="display:none">
+      <div class="concerts-grid">
+        <div class="concert-card" data-key="a-boogie-wit-da-hoodie"><div class="concert-emoji-bg">🎤</div><div class="concert-info"><h4>A Boogie Wit da Hoodie</h4><span class="concert-tag">Hip-Hop · R&amp;B</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="atif-aslam"><div class="concert-emoji-bg">🎵</div><div class="concert-info"><h4>Atif Aslam</h4><span class="concert-tag">Bollywood · Pop</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="coldplay"><div class="concert-emoji-bg">⭐</div><div class="concert-info"><h4>Coldplay</h4><span class="concert-tag">Alternative · Pop Rock</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="dom-dolla"><div class="concert-emoji-bg">🎧</div><div class="concert-info"><h4>Dom Dolla</h4><span class="concert-tag">Electronic · House</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="don-toliver"><div class="concert-emoji-bg">🌟</div><div class="concert-info"><h4>Don Toliver</h4><span class="concert-tag">Hip-Hop · R&amp;B</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="future-metro-boomin"><div class="concert-emoji-bg">🔥</div><div class="concert-info"><h4>Future &amp; Metro Boomin</h4><span class="concert-tag">Hip-Hop · Trap</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="lil-tjay"><div class="concert-emoji-bg">🎶</div><div class="concert-info"><h4>Lil Tjay</h4><span class="concert-tag">Hip-Hop · Drill</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="maroon-5"><div class="concert-emoji-bg">🌹</div><div class="concert-info"><h4>Maroon 5</h4><span class="concert-tag">Pop · Rock</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="nav"><div class="concert-emoji-bg">💿</div><div class="concert-info"><h4>NAV</h4><span class="concert-tag">Hip-Hop · Trap</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="playboi-carti"><div class="concert-emoji-bg">👑</div><div class="concert-info"><h4>Playboi Carti</h4><span class="concert-tag">Hip-Hop · Trap</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="post-malone"><div class="concert-emoji-bg">🎸</div><div class="concert-info"><h4>Post Malone</h4><span class="concert-tag">Hip-Hop · Pop</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="rich-the-kid"><div class="concert-emoji-bg">💎</div><div class="concert-info"><h4>Rich the Kid</h4><span class="concert-tag">Hip-Hop · Trap</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="shawn-mendes"><div class="concert-emoji-bg">🎵</div><div class="concert-info"><h4>Shawn Mendes</h4><span class="concert-tag">Pop · Acoustic</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="travis-scott"><div class="concert-emoji-bg">🌙</div><div class="concert-info"><h4>Travis Scott</h4><span class="concert-tag">Hip-Hop · Psychedelic</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+        <div class="concert-card" data-key="the-weeknd"><div class="concert-emoji-bg">🥀</div><div class="concert-info"><h4>The Weeknd</h4><span class="concert-tag">R&amp;B · Pop</span></div><div class="concert-hover-overlay"><i class="fas fa-images"></i><span>View Gallery</span></div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════ PAGE: TRAVEL ══════════════════════ -->
+<div id="page-travel" class="page">
+  <div class="travel-scene-bg"><div class="travel-dots-grid"></div>
+    <span class="cute-plane cp1">✈️</span>
+    <span class="cute-plane cp2">✈️</span>
+    <span class="cute-plane cp3">✈️</span>
+    <span class="cute-plane cp4">✈️</span>
+    <span class="cute-plane cp5">✈️</span>
+    <span class="cute-plane cp6">✈️</span>
+    <span class="cute-plane cp7">✈️</span>
+  </div>
+  <div class="page-header">
+    <span class="page-label teal-label">Travel</span>
+    <h2 class="page-title">Around the World <span style="-webkit-text-fill-color:initial;background:none;filter:none;">🌍</span></h2>
+    <div class="title-rule teal-rule"></div>
+  </div>
+  <div class="travel-page-inner">
+    <p class="travel-intro">Traveling the world, one place at a time!</p>
+
+    <!-- Passport stamps -->
+    <div class="stamps-section">
+      <div class="stamps-label">✈️ passport stamps</div>
+      <div class="stamps-wrap">
+        <div class="stamp" style="--r:-4deg;--c:var(--teal)" title="Canada">🇨🇦</div>
+        <div class="stamp" style="--r:3deg;--c:var(--gold)" title="USA">🇺🇸</div>
+        <div class="stamp" style="--r:-2deg;--c:var(--rose)" title="Mexico">🇲🇽</div>
+        <div class="stamp" style="--r:5deg;--c:var(--teal)" title="Costa Rica">🇨🇷</div>
+        <div class="stamp" style="--r:-3deg;--c:var(--gold)" title="Jamaica">🇯🇲</div>
+        <div class="stamp" style="--r:2deg;--c:var(--rose)" title="Dom. Republic">🇩🇴</div>
+        <div class="stamp" style="--r:-5deg;--c:var(--teal)" title="Aruba">🇦🇼</div>
+        <div class="stamp" style="--r:4deg;--c:var(--gold)" title="Iceland">🇮🇸</div>
+        <div class="stamp" style="--r:-1deg;--c:var(--rose)" title="Norway">🇳🇴</div>
+        <div class="stamp" style="--r:-4deg;--c:var(--gold)" title="Spain">🇪🇸</div>
+        <div class="stamp" style="--r:2deg;--c:var(--rose)" title="India">🇮🇳</div>
+        <div class="stamp" style="--r:-3deg;--c:var(--teal)" title="Japan">🇯🇵</div>
+        <div class="stamp" style="--r:5deg;--c:var(--gold)" title="Thailand">🇹🇭</div>
+      </div>
+    </div>
+
+    <!-- World map -->
+    <div class="world-map-section">
+      <h3 class="subsection-heading">Places I've Been so Far</h3>
+      <div class="world-map-wrap">
+        <svg viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" class="world-svg-bg" xmlns="http://www.w3.org/2000/svg">
+          <!-- North America -->
+          <path d="M 28,50 L 100,45 L 165,95 L 155,120 L 170,185 L 245,210 L 260,195 L 278,180 L 325,122 L 348,95 L 315,50 L 250,40 L 170,38 L 90,42 Z"/>
+          <!-- South America -->
+          <path d="M 278,228 L 360,220 L 400,228 L 400,300 L 362,370 L 308,403 L 286,400 L 265,340 L 245,270 Z"/>
+          <!-- Greenland -->
+          <path d="M 308,28 L 375,18 L 415,45 L 400,80 L 355,96 L 320,80 Z"/>
+          <!-- Europe -->
+          <path d="M 472,150 L 488,90 L 530,70 L 572,96 L 586,55 L 650,70 L 680,86 L 642,122 L 600,146 L 565,150 L 520,150 Z"/>
+          <!-- Africa -->
+          <path d="M 472,152 L 535,142 L 600,162 L 638,225 L 620,285 L 582,347 L 547,347 L 500,290 L 474,236 Z"/>
+          <!-- Asia -->
+          <path d="M 595,132 L 642,100 L 668,68 L 755,40 L 870,48 L 975,82 L 972,122 L 905,178 L 840,166 L 796,222 L 725,226 L 680,262 L 640,222 L 606,200 Z"/>
+          <!-- SE Asia islands (simplified) -->
+          <path d="M 796,222 L 836,240 L 870,228 L 880,260 L 855,280 L 818,268 L 800,248 Z"/>
+          <!-- Australia -->
+          <path d="M 748,276 L 858,250 L 935,282 L 940,350 L 900,394 L 832,394 L 748,368 Z"/>
+        </svg>
+        <!-- Visited country pins -->
+        <div class="map-pin" style="left:23.3%;top:18.9%" data-country="🇨🇦 Canada"></div>
+        <div class="map-pin" style="left:22.8%;top:28.3%" data-country="🇺🇸 United States"></div>
+        <div class="map-pin" style="left:21.7%;top:37.2%" data-country="🇲🇽 Mexico"></div>
+        <div class="map-pin" style="left:26.7%;top:44.6%" data-country="🇨🇷 Costa Rica"></div>
+        <div class="map-pin" style="left:28.5%;top:39.9%" data-country="🇯🇲 Jamaica"></div>
+        <div class="map-pin" style="left:31.0%;top:39.7%" data-country="🇩🇴 Dominican Republic"></div>
+        <div class="map-pin" style="left:30.6%;top:43.1%" data-country="🇦🇼 Aruba"></div>
+        <div class="map-pin" style="left:45.0%;top:13.9%" data-country="🇮🇸 Iceland"></div>
+        <div class="map-pin" style="left:53.0%;top:16.7%" data-country="🇳🇴 Norway"></div>
+        <div class="map-pin" style="left:49.0%;top:27.6%" data-country="🇪🇸 Spain"></div>
+        <div class="map-pin" style="left:71.4%;top:38.9%" data-country="🇮🇳 India"></div>
+        <div class="map-pin" style="left:88.8%;top:30.2%" data-country="🇯🇵 Japan"></div>
+        <div class="map-pin" style="left:77.9%;top:42.4%" data-country="🇹🇭 Thailand"></div>
+        <div id="mapTooltip" class="map-tooltip"></div>
+      </div>
+    </div>
+
+    <div class="destinations-grid">
+      <div class="dest-card" data-dest="aruba" data-emoji="🏝️"><div class="dest-card-face"><div class="dest-emoji-big">🏝️</div><h4>Aruba</h4><p class="dest-region-lbl">Caribbean</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="canada" data-emoji="🍁"><div class="dest-card-face"><div class="dest-emoji-big">🍁</div><h4>Canada</h4><p class="dest-region-lbl">North America</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="costa-rica" data-emoji="🌿"><div class="dest-card-face"><div class="dest-emoji-big">🌿</div><h4>Costa Rica</h4><p class="dest-region-lbl">Central America</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="iceland" data-emoji="🌌"><div class="dest-card-face"><div class="dest-emoji-big">🌌</div><h4>Iceland</h4><p class="dest-region-lbl">Northern Europe</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="india" data-emoji="🕌"><div class="dest-card-face"><div class="dest-emoji-big">🕌</div><h4>India</h4><p class="dest-region-lbl">South Asia</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="jamaica" data-emoji="🌴"><div class="dest-card-face"><div class="dest-emoji-big">🌴</div><h4>Jamaica</h4><p class="dest-region-lbl">Caribbean</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="japan" data-emoji="⛩️"><div class="dest-card-face"><div class="dest-emoji-big">⛩️</div><h4>Japan</h4><p class="dest-region-lbl">East Asia</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="mexico" data-emoji="🌮"><div class="dest-card-face"><div class="dest-emoji-big">🌮</div><h4>Mexico</h4><p class="dest-region-lbl">North America</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="new-york-city" data-emoji="🗽"><div class="dest-card-face"><div class="dest-emoji-big">🗽</div><h4>New York City</h4><p class="dest-region-lbl">North America</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="norway" data-emoji="🌅"><div class="dest-card-face"><div class="dest-emoji-big">🌅</div><h4>Norway</h4><p class="dest-region-lbl">Northern Europe</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="punta-cana" data-emoji="🌊"><div class="dest-card-face"><div class="dest-emoji-big">🌊</div><h4>Punta Cana</h4><p class="dest-region-lbl">Caribbean</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="spain" data-emoji="💃"><div class="dest-card-face"><div class="dest-emoji-big">💃</div><h4>Spain</h4><p class="dest-region-lbl">Southern Europe</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+      <div class="dest-card" data-dest="thailand" data-emoji="🐘"><div class="dest-card-face"><div class="dest-emoji-big">🐘</div><h4>Thailand</h4><p class="dest-region-lbl">Southeast Asia</p><button class="dest-btn">View Photos <i class="fas fa-images"></i></button></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ GALLERY MODAL ═══════════════════════════ -->
+<div id="galleryModal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-box">
+    <div class="modal-hdr">
+      <div class="modal-hdr-left"><span class="modal-emoji-title" id="modalEmoji"></span><h3 id="modalTitle">Gallery</h3></div>
+      <button class="modal-close-btn" id="modalCloseBtn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-scroll-body"><div class="modal-media-grid" id="modalGrid"></div></div>
+  </div>
+</div>
+
+<!-- ══════════════════════ LIGHTBOX ════════════════════════════ -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lb-backdrop" id="lbBackdrop"></div>
+  <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+  <button class="lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+  <button class="lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+  <div class="lb-stage"><img id="lbImg" src="" alt="" /><video id="lbVideo" controls></video></div>
+  <div class="lb-counter" id="lbCounter">1 / 1</div>
+</div>
+
+<!-- Playable side pianos (fixed, shown only on music page) -->
+<div class="side-piano side-piano-left" id="sidePianoLeft">
+  <div class="side-piano-label">♪ play me</div>
+  <div class="piano-keys-wrap">
+    <div class="pk white" data-freq="261.63" data-note="C"><span>C</span></div>
+    <div class="pk black" data-freq="277.18" data-note="C#"></div>
+    <div class="pk white" data-freq="293.66" data-note="D"><span>D</span></div>
+    <div class="pk black" data-freq="311.13" data-note="D#"></div>
+    <div class="pk white" data-freq="329.63" data-note="E"><span>E</span></div>
+    <div class="pk white" data-freq="349.23" data-note="F"><span>F</span></div>
+    <div class="pk black" data-freq="369.99" data-note="F#"></div>
+    <div class="pk white" data-freq="392.00" data-note="G"><span>G</span></div>
+    <div class="pk black" data-freq="415.30" data-note="G#"></div>
+    <div class="pk white" data-freq="440.00" data-note="A"><span>A</span></div>
+    <div class="pk black" data-freq="466.16" data-note="A#"></div>
+    <div class="pk white" data-freq="493.88" data-note="B"><span>B</span></div>
+    <div class="pk white" data-freq="523.25" data-note="C"><span>C</span></div>
+  </div>
+</div>
+<div class="side-piano side-piano-right" id="sidePianoRight">
+  <div class="side-piano-label">play me ♪</div>
+  <div class="piano-keys-wrap">
+    <div class="pk white" data-freq="554.37" data-note="C"><span>C</span></div>
+    <div class="pk black" data-freq="587.33" data-note="C#"></div>
+    <div class="pk white" data-freq="622.25" data-note="D"><span>D</span></div>
+    <div class="pk black" data-freq="659.25" data-note="D#"></div>
+    <div class="pk white" data-freq="698.46" data-note="E"><span>E</span></div>
+    <div class="pk white" data-freq="739.99" data-note="F"><span>F</span></div>
+    <div class="pk black" data-freq="783.99" data-note="F#"></div>
+    <div class="pk white" data-freq="830.61" data-note="G"><span>G</span></div>
+    <div class="pk black" data-freq="880.00" data-note="G#"></div>
+    <div class="pk white" data-freq="932.33" data-note="A"><span>A</span></div>
+    <div class="pk black" data-freq="987.77" data-note="A#"></div>
+    <div class="pk white" data-freq="1046.50" data-note="B"><span>B</span></div>
+    <div class="pk white" data-freq="1108.73" data-note="C"><span>C</span></div>
+  </div>
+</div>
+
+<!-- Mini terminal (fixed, shown only on professional page) -->
+<div class="mini-terminal" id="miniTerminal">
+  <div class="term-header">
+    <span class="term-title">krishi@portfolio</span>
+    <button class="term-toggle" id="termToggle" title="Minimize"><i class="fas fa-minus"></i></button>
+  </div>
+  <div class="term-output" id="termOutput">
+    <div class="term-welcome" style="margin-bottom:6px;font-size:0.65rem;line-height:1.5;opacity:0.85;">// click a command for a quick answer about me</div>
+    <div class="term-welcome"><span class="term-prompt">$</span> try a command ↓</div>
+  </div>
+  <div class="term-cmds">
+    <button class="term-cmd" data-cmd="whoami">$ whoami</button>
+    <button class="term-cmd" data-cmd="skills">$ skills</button>
+    <button class="term-cmd" data-cmd="internships">$ internships</button>
+    <button class="term-cmd" data-cmd="fun_fact">$ fun_fact</button>
+    <button class="term-cmd" data-cmd="clear">$ clear</button>
+  </div>
+</div>
+
+<script src="js/gallery-data.js"></script>
+<script src="js/drive-config.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
